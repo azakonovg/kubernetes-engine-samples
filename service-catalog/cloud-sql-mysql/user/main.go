@@ -63,7 +63,7 @@ func getDSN(usr, pwd, host string) string {
 func main() {
 	host := os.Getenv(dbHost)
 	if host == "" {
-		log.Fatal(dbHost + " environment variable unspecified.")
+		log.Fatal(dbHost + " environment variable unspecified. AZ")
 	}
 	user := os.Getenv(dbUser)
 	if user == "" {
@@ -119,7 +119,7 @@ func reset(w http.ResponseWriter, r *http.Request) {
 	}
 
 	w.Header().Set("Content-Type", "application/json")
-	w.Write([]byte("{ \"status\": \"database created\" }"))
+	w.Write([]byte("{ \"status\": \"database created. AZ\" }"))
 }
 
 func read(w http.ResponseWriter, r *http.Request) {

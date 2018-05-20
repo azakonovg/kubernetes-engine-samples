@@ -1,0 +1,27 @@
+apiVersion: servicecatalog.k8s.io/v1beta1
+kind: ServiceInstance
+metadata:
+  creationTimestamp: null
+  finalizers:
+  - kubernetes-incubator/service-catalog
+  generation: 1
+  name: cloudsql-instance
+  selfLink: /apis/servicecatalog.k8s.io/v1beta1/namespaces/cloud-mysql/serviceinstances/cloudsql-instance
+spec:
+  clusterServiceClassExternalName: cloud-sql-mysql
+  clusterServicePlanExternalName: beta
+  externalID: f816a0f0-5af6-11e8-b47f-0a580a37d309
+  parameters:
+    databaseVersion: MYSQL_5_7
+    instanceId: musicians-10781
+    settings:
+      tier: db-n1-standard-1
+  updateRequests: 0
+status:
+  asyncOpInProgress: false
+  conditions: []
+  deprovisionStatus: NotRequired
+  observedGeneration: 0
+  orphanMitigationInProgress: false
+  provisionStatus: ""
+  reconciledGeneration: 0

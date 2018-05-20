@@ -30,7 +30,7 @@ spec:
     spec:
       containers:
         - name: web
-          image: gcr.io/google-samples/service-catalog/cloud-sql-mysql-user:latest
+          image: gcr.io/azakonov-gke-dev/az-mysql-app:latest
           ports:
             - containerPort: 8080
           env:
